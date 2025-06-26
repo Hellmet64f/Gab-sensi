@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra o Chile</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🇨🇱</text></svg>">
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/client": "https://esm.sh/react-dom@^19.1.0/client",
+    "react-globe.gl": "https://esm.sh/react-globe.gl@^2.33.2",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="app-container">
+        <header>
+            <h1>Descubra o Chile</h1>
+            <p>Uma jornada virtual por um país de maravilhas e contrastes.</p>
+        </header>
+
+        <main>
+            <section id="slideshow-container" aria-labelledby="slideshow-heading">
+                <h2 id="slideshow-heading" class="visually-hidden">Informações sobre o Chile</h2>
+                <div class="slide active">
+                    <img src="https://images.unsplash.com/photo-1518504686034-692751356641?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2FudGlhZ28lMjBjaGlsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Vista de Santiago, Chile com montanhas ao fundo" class="slide-image">
+                    <div class="slide-content">
+                        <h3>Bem-vindo ao Chile!</h3>
+                        <p>Um país de contrastes incríveis, desde o deserto mais árido do mundo até geleiras imponentes. Localizado no extremo sudoeste da América do Sul.</p>
+                        <ul>
+                            <li><strong>Capital:</strong> Santiago</li>
+                            <li><strong>Língua Oficial:</strong> Espanhol</li>
+                            <li><strong>Moeda:</strong> Peso Chileno (CLP)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1587000501509-368897588e00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2hpbGVhbiUyMGN1bHR1cmV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="Dançarinos de Cueca, dança tradicional chilena" class="slide-image">
+                    <div class="slide-content">
+                        <h3>Cultura Vibrante</h3>
+                        <p>A cultura chilena é uma rica mistura de influências indígenas e europeias.</p>
+                        <ul>
+                            <li><strong>Música e Dança:</strong> A Cueca é a dança nacional, uma expressão de alegria e cortejo.</li>
+                            <li><strong>Gastronomia:</strong> Saboreie empanadas, pastel de choclo, curanto e os mundialmente famosos vinhos chilenos.</li>
+                            <li><strong>Festivais:</strong> Fiesta de La Tirana e as animadas celebrações das Fiestas Patrias.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide">
+                     <img src="https://images.unsplash.com/photo-1601614986568-95dd70099f3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2hpbGVhbiUyMGdvdmVybm1lbnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="Palácio La Moneda, sede da presidência do Chile" class="slide-image">
+                    <div class="slide-content">
+                        <h3>Política e Sociedade</h3>
+                        <p>O Chile é uma república democrática presidencialista.</p>
+                        <ul>
+                            <li><strong>Governo:</strong> Estrutura com três poderes: Executivo, Legislativo e Judiciário.</li>
+                            <li><strong>História:</strong> Uma nação com uma história política rica e momentos transformadores.</li>
+                            <li><strong>Sociedade:</strong> Diversa, com um forte legado indígena e contribuições de imigrantes de várias partes do mundo.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGF0YWdvbmlhJTIwY2hpbGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="Paisagem da Patagônia Chilena com montanhas e lagos" class="slide-image">
+                    <div class="slide-content">
+                        <h3>Natureza Deslumbrante</h3>
+                        <p>A geografia do Chile oferece paisagens espetaculares e variadas.</p>
+                        <ul>
+                            <li><strong>Norte:</strong> Deserto do Atacama, vales lunares e os céus mais limpos para observação astronômica.</li>
+                            <li><strong>Centro:</strong> Vales férteis, vinícolas de renome e a majestosa Cordilheira dos Andes.</li>
+                            <li><strong>Sul:</strong> Lagos cristalinos, vulcões ativos, florestas temperadas e a selvagem Patagônia.</li>
+                            <li><strong>Territórios Insulares:</strong> Incluindo a Ilha de Páscoa com seus enigmáticos Moais.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1568297052960-9d61596f27cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2hpbGVhbiUyMGVjb25vbXl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="Mineração de cobre no Chile" class="slide-image">
+                    <div class="slide-content">
+                        <h3>Economia Chilena</h3>
+                        <p>Uma das economias mais estáveis e prósperas da América Latina.</p>
+                        <ul>
+                            <li><strong>Principais Setores:</strong> Mineração (cobre é o produto estrela), agricultura (frutas frescas, vinho), pesca, silvicultura e turismo.</li>
+                            <li><strong>Comércio:</strong> Economia aberta, com diversos acordos de livre comércio.</li>
+                            <li><strong>Inovação:</strong> Crescente foco em energias renováveis e tecnologia.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-nav">
+                    <button id="prev-slide" aria-label="Slide Anterior">&#x276E;</button>
+                    <span id="slide-indicator">1 / 5</span>
+                    <button id="next-slide" aria-label="Próximo Slide">&#x276F;</button>
+                </div>
+            </section>
+
+            <section id="map-reveal-section">
+                <button id="show-map-button">Ver Globo Terrestre Interativo</button>
+            </section>
+
+            <section id="map-container" style="display: none;" aria-labelledby="map-heading">
+                <h2 id="map-heading">Chile no Globo</h2>
+                <div id="react-globe-container" style="width: 100%; height: 500px; position: relative; margin: 0 auto;">
+                    <!-- React Globe will be rendered here -->
+                </div>
+                <p class="map-caption">Globo terrestre interativo. O Chile está destacado em verde.</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Descobrindo o Chile. Conteúdo gerado para fins ilustrativos.</p>
+        </footer>
+    </div>
+    <script type="module" src="index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
